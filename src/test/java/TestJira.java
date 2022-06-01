@@ -49,6 +49,7 @@ public class TestJira extends WebHooks {
     @Description("Проведение проверки, что статус и версия задачи TestSelenium, соответствует слудеющим значениям: В РАБОТЕ, Version 2.0")
     @Owner(value = "Москаленко Вадим")
     @Test
+    @Tag("3")
     @DisplayName("Проверка статуса и версии задачи")
     public void Test_3(){
         open(Configuration.getValue("URL"));
@@ -59,10 +60,11 @@ public class TestJira extends WebHooks {
 
     @Epic(value = "Тестирование Jira")
     @Feature(value = "Тестирование заведения новой задачи в Jira")
-    @Severity(SeverityLevel.MINOR)
+    @Severity(SeverityLevel.CRITICAL)
     @Description("Создание новой задачи по заданной теме и описанию")
     @Owner(value = "Москаленко Вадим")
     @Test
+    @Tag("4")
     @DisplayName("Заведение новой задачи")
     public void Test_4() {
         open(Configuration.getValue("URL"));
