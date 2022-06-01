@@ -8,11 +8,11 @@ import java.time.Duration;
 import static com.codeborne.selenide.Condition.visible;
 
 public class CreateTaskSteps extends CreateTaskElements {
-    @Step("Создание задачи с темой {themeName} и описанием {specificationStr}")
-    public static void createTask(String themeName, String specificationStr) {
+    @Step("Создание задачи с типом {typeName}, приоритету {priority}, темой {themeName},  и описанием {specificationStr}")
+    public static void createTask(String typeName, String priority, String themeName, String specificationStr) {
         buttonCreate.click();
         typeTask.shouldBe(visible, Duration.ofSeconds(60)).click();
-        typeTask.setValue("Ошибка");
+        typeTask.setValue(typeName);
         typeTask.pressEnter();
         createTheme.setValue(themeName);
         textButton1.shouldBe(visible, Duration.ofSeconds(60)).click();
@@ -20,7 +20,7 @@ public class CreateTaskSteps extends CreateTaskElements {
         descriptionFrame.shouldBe(visible, Duration.ofSeconds(60)).sendKeys(specificationStr);
         selectVersion.click();
         selectPriority.click();
-        selectPriority.setValue("Lowest");
+        selectPriority.setValue(priority);
         selectPriority.pressEnter();
         textButton2.shouldBe(visible, Duration.ofSeconds(60)).click();
         environmentFrame.click();

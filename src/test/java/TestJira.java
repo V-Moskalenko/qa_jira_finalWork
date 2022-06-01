@@ -61,7 +61,7 @@ public class TestJira extends WebHooks {
     @Epic(value = "Тестирование Jira")
     @Feature(value = "Тестирование заведения новой задачи в Jira")
     @Severity(SeverityLevel.CRITICAL)
-    @Description("Создание новой задачи по заданной теме и описанию")
+    @Description("Создание новой задачи по заданному типу, приоритету, теме и описанию")
     @Owner(value = "Москаленко Вадим")
     @Test
     @Tag("4")
@@ -71,6 +71,6 @@ public class TestJira extends WebHooks {
         authStep(Configuration.getValue("loginName"), Configuration.getValue("passwordName"));
         getCountTask();
         testTask();
-        createTask(Configuration.getValue("themeName"), Configuration.getValue("specification"));
+        createTask(Configuration.getValue("type"), Configuration.getValue("priority"), Configuration.getValue("themeName"), Configuration.getValue("specification"));
     }
 }
