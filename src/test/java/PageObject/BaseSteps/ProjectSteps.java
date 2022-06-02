@@ -9,6 +9,9 @@ import java.time.Duration;
 import static com.codeborne.selenide.Condition.visible;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * Класс шага тестирования проверки статуса и версии задачи TestSelenium
+ */
 public class ProjectSteps extends ProjectElements {
     @Step("Проверка статуса и версии задачи")
     public static void testTask() {

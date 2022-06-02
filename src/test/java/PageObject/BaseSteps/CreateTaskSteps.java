@@ -7,6 +7,9 @@ import java.time.Duration;
 
 import static com.codeborne.selenide.Condition.visible;
 
+/**
+ * Класс шага тестирования заведения новый задачи в Jira
+ */
 public class CreateTaskSteps extends CreateTaskElements {
     @Step("Создание задачи с типом {typeName}, приоритету {priority}, темой {themeName},  и описанием {specificationStr}")
     public static void createTask(String typeName, String priority, String themeName, String specificationStr) {

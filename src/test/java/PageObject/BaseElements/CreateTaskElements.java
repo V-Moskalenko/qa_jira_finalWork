@@ -4,6 +4,9 @@ import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.$x;
 
+/**
+ * Класс с элементами на странице создания задачи
+ */
 public class CreateTaskElements {
     public static SelenideElement buttonCreate = $x("//a[@id='create_link']");
     public static SelenideElement createTheme = $x("//input[@name='summary']");

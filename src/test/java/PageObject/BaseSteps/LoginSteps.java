@@ -8,6 +8,9 @@ import java.time.Duration;
 import static com.codeborne.selenide.Condition.visible;
 import static org.junit.Assert.assertEquals;
 
+/**
+ * Класс шага тестирования авторизации
+ */
 public class LoginSteps extends LoginElements {
     @Step("Авторизация с логином {loginName} и паролем {passwordName}")
     public static void authStep(String loginName, String passwordName){

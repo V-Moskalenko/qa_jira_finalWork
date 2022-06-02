@@ -4,6 +4,9 @@ import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.$x;
 
+/**
+ * Класс с элементами главной страницы авторизации пользователя и профиля
+ */
 public class LoginElements {
     public static SelenideElement loginPath = $x("//input[@id='login-form-username']");
     public static SelenideElement passwordPath = $x("//input[@id='login-form-password']");

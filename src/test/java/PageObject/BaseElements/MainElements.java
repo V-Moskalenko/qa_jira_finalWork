@@ -4,6 +4,9 @@ import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.$x;
 
+/**
+ * Класс с элементами странице проектов
+ */
 public class MainElements {
     public static SelenideElement projectButton = $x("//div[@class='aui-header-primary']//a[@id='browse_link']");
     public static SelenideElement testButton = $x("//div[@class='aui-header-primary']//div[@class='aui-dropdown2-section']//a[contains(text(),'Test (TEST)')]");

@@ -13,6 +13,9 @@ import static PageObject.BaseSteps.MainSteps.getCountTask;
 import static PageObject.BaseSteps.ProjectSteps.testTask;
 import static com.codeborne.selenide.Selenide.open;
 
+/**
+ * Основной класс тестирования на JUnit
+ */
 @ExtendWith(ScreenshotOnFailureRule.class)
 public class TestJira extends WebHooks {
 

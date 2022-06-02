@@ -7,6 +7,9 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
+/**
+ * Класс с методами для открытия web-драйвера в полноэкранном режиме до начала тестов и закрия драйвера после каждого теста
+ */
 public class WebHooks {
 
     @BeforeEach
@@ -21,5 +24,4 @@ public class WebHooks {
     public void webClose() {
         WebDriverRunner.closeWebDriver();
     }
-
 }

@@ -8,6 +8,9 @@ import org.openqa.selenium.TakesScreenshot;
 
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
+/**
+ * Класс для получения скриншотов после выполнения шага тестирования
+ */
 public class ScreenshotOnFailureRule implements AfterTestExecutionCallback {
 
     @Override
